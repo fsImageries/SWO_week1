@@ -168,7 +168,7 @@ function updateImpressumPage(revert=false){
 
 function landingMobile_space(){
 $(".landingMobile_title .text").each(function(index){
-    const mult = landingMobile_small_mquery.matches ? 4: 3
+    const mult = landingMobile_small_mquery.matches ? 6: 5
     $(this).css("top", `${index*mult}vh`)
 })
 }

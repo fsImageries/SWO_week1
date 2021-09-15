@@ -171,9 +171,5 @@ function setupWorksTitle(){
   }
 }
 
-setupWorksTitle()
-$(window).resize(setupWorksTitle)
-
-
 
 

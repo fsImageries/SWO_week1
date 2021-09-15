@@ -3,6 +3,8 @@ const duration    = $(":root").css("--first-anim-duration")
 const ms_duration = parseInt(duration) * 1000 - 500
 const childs      = $(".topnav").children()
 var   isTouch     = isTouchDevice()
+var landingMobile_small_mquery = window.matchMedia("(max-width: 300px)")
+
 
 function isTouchDevice() {
     return (('ontouchstart' in window) ||
@@ -162,4 +164,11 @@ function updateImpressumPage(revert=false){
         $(".impressumHolder").removeClass("hidden")
         $(".impressumHolder").css("transition", "4s")
     }
+}
+
+function landingMobile_space(){
+$(".landingMobile_title .text").each(function(index){
+    const mult = landingMobile_small_mquery.matches ? 4: 3
+    $(this).css("top", `${index*mult}vh`)
+})
 }

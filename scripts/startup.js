@@ -46,22 +46,13 @@ $(".topnav a:first-child").click(function(){
     setTimeout(changeBodyColor, 0)
 })
 
-function disableBlobs(){
-    $(".blobHolder3").css("visibility", "hidden")
-}
-disableBlobs()
+// Window handler
+$(window).resize(function(){
+    landingMobile_space()
+    setupWorksTitle()
+})
 
 // Executing when page is loaded
-// $(".contactItem").each(
-//     function(){
-//         let active = $(this)
-//         active.hover(
-//             () => active.addClass("jiggle"),
-//             () => active.removeClass("jiggle")
-//         )
-//     }
-// )
-
 hover_expr = (element) => element.hover(
     () => element.addClass("jiggle"),
     () => element.removeClass("jiggle")
@@ -70,6 +61,10 @@ hover_expr = (element) => element.hover(
 animDelayOnChildren(".topnav", (i) => `${i*2}00`, false, true)
 animDelayOnChildren(".contactHolder ul", (i) => `${i+10}00`, false, true)
 animDelayOnChildren(".landingMobile_title", (i) => `${i*1250}`, false, false, true)
+
+$(".blobHolder3").css("visibility", "hidden")
+landingMobile_space()
+setupWorksTitle()
 
 
 // Fires after the given time passed, the given time is the duration of the startig animation

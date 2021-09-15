@@ -74,7 +74,7 @@
 }
 
 .imageGrid .child.hovered {
-  animation: slide_in 2.5s ease-in-out forwards;
+  animation: slide_in 2.5s ease-in-out backwards;
 }
 
 .imageGrid .child.hovered2 {

@@ -41,6 +41,7 @@ function getParentSiblings(element, idx1=1, idx2=2){
 
 // Scroll functions for title display
 function scroll_1x_title(clear_item){
+  if (getActivePage() != "works"){return}
       
   let cur_elem = document.elementFromPoint($(window).width()/2, $(window).height()/2);
   let parent = $(cur_elem).parent()
@@ -63,6 +64,8 @@ function scroll_1x_title(clear_item){
 }
 
 function scroll_2x_title(clear_item){
+  if (getActivePage() != "works"){return}
+
   let cur_elem
   if (isTop(50)){
     cur_elem = $(".child")[0]
@@ -96,6 +99,8 @@ function scroll_2x_title(clear_item){
 }
 
 function scroll_3x_title(clear_item){
+  if (getActivePage() != "works"){return}
+  
   let cur_elem
   if (isTop(100)){
     cur_elem = $(".child")[1]

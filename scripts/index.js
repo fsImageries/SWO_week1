@@ -162,7 +162,7 @@ function updateImpressumPage(revert=false){
         $(".blobHolder3.impressum").css("visibility", "visible")
 
         $(".impressumHolder").removeClass("hidden")
-        $(".impressumHolder").css("transition", "4s")
+        $(".impressumHolder").css("transition", "3s")
     }
 }
 

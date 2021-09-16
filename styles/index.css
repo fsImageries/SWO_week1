@@ -121,7 +121,7 @@
   --lawn-green: #86fc0fff;
 
   --back-impressum-blob: var(--sheen-green);
-  --mid-impressum-blob: var(--french-lime);
+  --mid-impressum-blob: #85de2b;
   --front-impressum-blob: var(--lawn-green);
   /* global variables */
   --first-anim-duration: 1s;
@@ -441,7 +441,9 @@ ul {
 .impressumHolder .text {
   font-size: 1.5rem;
   text-shadow: 5px 5px 5px #00000030;
-  text-align: center;
+  /* text-align: center; */
+  height: 90vh;
+  overflow-y: scroll;
 }
 
 /* Landing page */
